@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: test-configmap
-data:
-  message: "Hello, ArgoCD! We will delete this ConfigMap in the next step."
