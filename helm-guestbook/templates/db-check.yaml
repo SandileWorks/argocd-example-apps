@@ -10,8 +10,8 @@ spec:
     spec:
       restartPolicy: Never
       containers:
-        - name: db-check
-          image: busybox:latest
+        - name: check
+          image: busybox
           command:
             - "sh"
             - "-c"
@@ -21,4 +21,4 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: db-config
-                  key: host
+                  key: db_host
