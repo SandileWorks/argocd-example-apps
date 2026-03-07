@@ -16,7 +16,7 @@ spec:
             - "sh"
             - "-c"
             - "echo 'Running db check to $DB_HOST...' ; sleep 5 ; echo 'Db check completed.'"
-          -env:
+          env:
             - name: DB_HOST
               valuefrom:
                 configMapKeyRef:
